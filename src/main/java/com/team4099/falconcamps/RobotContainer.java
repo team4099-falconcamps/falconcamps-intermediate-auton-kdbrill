@@ -13,7 +13,7 @@ public class RobotContainer {
     }
 
     public Command getAutonomousCommand() {
-        return new ShootCommand(shooter);command.withTimout
+        return new ShootCommand(shooter).withTimout;
  
     }
 }
