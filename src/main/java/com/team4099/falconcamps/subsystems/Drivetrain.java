@@ -22,6 +22,10 @@ public class Drivetrain extends SubsystemBase {
         right.configSelectedFeedbackSensor(FeedbackDevice.IntegratedSensor);
     }
 
+    public double getGyroAngle() {
+        return gyro.getAngle();
+    }
+
     public double measurementInMetersLeft() {
         return encoderTicksToMeters(left.getSelectedSensorPosition());
     }
